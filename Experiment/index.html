@@ -8,17 +8,49 @@
     <meta name="author" content="MK lab" />
     <title>Experiment</title>
     <link href="..\css\jspsych.css" rel="stylesheet" type="text/css">
+    //<link href="jspsych/css/jspsych.css" rel="stylesheet" type="text/css">    
 </head>
 
 <body>
+    <!-- 必要なプラグイン -->
     <script src="C:\Users\kimar\jspsych\jspsych.js"></script>
+    //<script src="jspsych/jspsych.js"></script>
+    <script src="mklabPlugins/jspsych-survey-text-mk.js"></script>
     <!-- キーボードレスポンス -->
     <script src="C:\Users\kimar\jspsych\plugins\jspsych-html-keyboard-response.js"></script>
+    //<script src="jspsych/plugins/jspsych-html-keyboard-response.js"></script>
     <!-- 選択肢プラグイン -->
     <script src="C:\Users\kimar\jspsych\plugins\jspsych-survey-likert.js"></script>
     <script src="C:\Users\kimar\jspsych\plugins\jspsych-survey-multi-select.js"></script>
+    //<script src="jspsych/plugins/jspsych-survey-likert.js"></script>    
+    //<script src="jspsych/plugins/jspsych-survey-multi-select.js"></script>
     <!-- 実験ファイルを記述-->
     <script src="main.js"></script>
+
+    <!-- ここまで -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>  
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBro97zhK6cPR_odp_OBfT4fDe-POTNr9M",
+        authDomain: "ois-classterai-teamb.firebaseapp.com",
+        databaseURL: "https://ois-classterai-teamb-default-rtdb.firebaseio.com",
+        projectId: "ois-classterai-teamb",
+        storageBucket: "ois-classterai-teamb.appspot.com",
+        messagingSenderId: "77094543163",
+        appId: "1:77094543163:web:bbd608a9489752c42be11e"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
     <!--ここまで-->
 </body>
+
 </html>
